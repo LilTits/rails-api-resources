@@ -1,4 +1,5 @@
 # Rails rest API
 
-Generate with Postgresql and Api flag
+Successfull implementation of the JSONAPI resources gem
 
+https://howtojsonapi.com/rails.html
