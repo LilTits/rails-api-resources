@@ -9,10 +9,6 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.2'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
-# Build JSON APIs with ease. 
-gem 'jsonapi-resources', '~> 0.10.2'
-# Faker
-gem 'faker', '~> 2.13'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -24,15 +20,15 @@ gem 'faker', '~> 2.13'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
-# group :production do
-#   # Build JSON APIs with ease.  
-#   gem 'jsonapi-resources', '~> 0.10.2'
-#   # Faker
-#   gem 'faker', '~> 2.13'
-# end
+
+group :production, :development, :test do
+  # Build JSON APIs with ease.  
+  gem 'jsonapi-resources', '~> 0.10.2'
+  # Faker
+  gem 'faker', '~> 2.13'
+end
 
 group :development, :test do
   gem 'listen', '~> 3.2'
