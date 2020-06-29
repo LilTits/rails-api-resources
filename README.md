@@ -8,3 +8,27 @@ https://howtojsonapi.com/rails.html
 
 Hosted at :
 https://thawing-badlands-52765.herokuapp.com/
+
+## Endpoints
+
+### Restaurant
+
+/restaurants
+List of all restaurants
+
+/restaurants/:id
+One restaurant
+
+/restaurants/:id/dishes
+Dishes of one restaurant
+
+### Dishes
+
+/dishes
+List of all dishes
+
+/dishes/:id
+One dishes
+
+/dishes/:id/restaurant
+Restaurant where the dishes is
