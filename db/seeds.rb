@@ -16,3 +16,13 @@ restaurants.each do |restaurant|
     })
   end
 end
+restaurants.each do |restaurant|
+  2.times do
+    restaurant.drinks
+    .create({
+      name: Faker::Beer.name,
+      rating: Faker::Number.between(from: 0, to: 5),
+      alcoholic: Faker::Boolean.boolean
+    })
+  end
+end
