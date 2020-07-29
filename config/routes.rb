@@ -3,4 +3,5 @@ Rails.application.routes.draw do
 
   jsonapi_resources :restaurants
   jsonapi_resources :dishes
+  jsonapi_resources :drinks
 end
